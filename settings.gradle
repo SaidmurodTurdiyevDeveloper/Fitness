@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Fitnes"
+include ':app'
+include ':common:common_utils'
+include ':fitnes:fitnes_praseneter'
+include ':fitness_app:fitness_data'
+include ':fitness_app:fitness_domen'
+include ':fitness_app:fitness_presenter'
